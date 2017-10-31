@@ -1,54 +1,41 @@
-# Pixel Art Maker
+# Javascript Calculator
 
-In this exercise, you'll create your own pixel art maker which will allow a user to choose colors from a palette and then paint pixel art. The interface is completely up to you, but it could look something like this.
+Use Javascript to build a basic calculator using the provided HTML and CSS. You'll only need to edit index.js 
 
-![Example of Pixel Art Maker](pixel-art-maker-alt.png)
+![Example](screenshots/example.gif)
 
-More specifically, your pixel art maker should allow a user to do the following.
+More specifically, the app should allow a user to do the following.
 
-1. Start with a blank canvas of pixels.
-1. Select a brush color from a palette of colors.
-1. Paint the pixels on the canvas using the brush color.
-1. Repeat step 2.
-
-Here's a development workflow that we recommend you use.
-
-1. Fork and clone this repository.
-1. Create a small, 2x2 grid canvas made up of white, square `div` tags with a border.
-1. Add an event listener to each `div` so when clicked the background turns red.
-1. Create a small palette of two colors (e.g. red and blue) below the canvas using more `div` tags.
-1. Add an event listener to these `div` tags so when clicked the brush color is saved.
-1. Expand the dimensions of the pixel canvas.
-1. Expand the palette with more colors. (i.e. red, orange, yellow, green, blue, purple, brown, gray, black, white, etc.)
-1. Expand the palette with a brush color indicator.
-1. Improve the look and feel of the canvas and color palette. Be careful not to break your program's behavior!
-
-**TIP:** Check out [this handy tool](http://www.colors.commutercreative.com/grid/) to see a list of all the named colors in CSS.
+- Click an operand or operator button to append its corresponding text to the screen.
+  - If the screen displays the message `Error`, don't append anything.
+- Click the `clear` button to remove all the text from the screen.
+- Click the `equals` button to evaluate the arithmetic expression shown in the screen.
+  - If the expression is in format `operand(+|-|x|÷)operand`, evaluate the expression and update the screen with the result.
+  - If the expression isn't in the correct format or when attempting to divide by zero, update the screen with the message `Error`.
 
 ### Bonus 1
 
-Improve the mouse so it behaves like a real paintbrush. In other words, allow the user to paint by clicking and dragging across the canvas. For this, you'll need a combination of the `mousedown`, `mouseenter`, and `mouseup` events.
-
-**TIP:** The [`mouseenter` event](https://developer.mozilla.org/en-US/docs/Web/Events/mouseenter) doesn't bubble up the DOM tree.
+Try to solve the exercise without changing the existing HTML nested inside the `buttons-container` tag.
 
 ### Bonus 2
 
-Add a color picker which allows the user to select any brush color using the [`<input type="color">` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color) and the [`change` event](https://developer.mozilla.org/en-US/docs/Web/Events/change).
+Try to evaluate the expression without using the `eval()` function.
 
 ### Bonus 3
 
-Research [LocalStorage](https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage) and make a way to Save and Load a drawing.  Research [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) and [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) as a way to put the drawing into LocalStorage.
+Enhance the calculator so users can input arithmetic expressions using their keyboard. More specifically, the app should allow a user to do the following.
 
-### Bonus 4
+- Type an arithmetic expression directly to the `screen`.
+- Press the `Enter` key to evaluate the screen's expression.
+- Press the `Escape` key to clear the screen.
 
-Create a fill tool that will [flood fill](https://en.wikipedia.org/wiki/Flood_fill) boundaries with a chosen paint color. 
+**TIP:** You'll have to change the `screen` to an `<input>` tag.
 
+## Deployment
 
-### Deployment
-
-Read over the following articles to learn how to deploy this web site to Surge.
+Review the following articles on the Surge platform and then deploy your website to production.
 
 - [Getting started with Surge](http://surge.sh/help/getting-started-with-surge)
 - [Remembering a domain](http://surge.sh/help/remembering-a-domain)
 
-A good domain name for this project is `USERNAME-pixel-art-maker.surge.sh` where `USERNAME` is your GitHub username in all **lowercase** letters. Once deployed and everything works as you expect, copy your Surge URL and paste it at the top of your GitHub repository's page.
+A good domain name for this project is `USERNAME-javascript-calculator.surge.sh` where `USERNAME` is your GitHub username in all **lowercase** letters. Once deployed and everything works as you expect, copy your Surge URL and paste it at the top of your GitHub repository's page.
