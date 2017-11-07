@@ -6,7 +6,7 @@ This drill involves making a tic-tac-toe game. The game logic is already written
 
 In the `app.js` file:
 
-* Write a function called `createGame` that populates the element with the ID of `gameboard` with the items in the `board` array, so that it looks like ![Game Board](game-board.png)
+* Write a function called `createGame` that populates the element with the ID of `gameboard` with the items in the `board` array, so that it looks like ![Game Board](./screenshots/game-board.png)
     * As you create each element, pass them to a pre-built function named `addClickListener`
 * Write a function called `displayMessage` that takes an optional message string:
     * Looks up an element with the class `message`
