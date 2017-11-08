@@ -1,0 +1,41 @@
+* {
+ font-family: sans-serif;
+ color: darkslategrey;
+}
+
+h1 {
+ margin-left: 10px;
+}
+
+.center {
+ text-align: center;
+}
+
+.container {
+ display: flex;
+ flex-wrap: wrap;
+ margin: auto;
+}
+
+.cell {
+ border: 1px solid black;
+ width: 15px;
+ height: 15px;
+ }
+
+.paint {
+ display: flex;
+ flex-wrap: wrap;
+ margin: auto;
+}
+
+.test {
+ border: 1px solid black;
+ height: 30px;
+ width: 30px;
+}
+
+.colorDefault {background-color: white;}
+.colorOne {background-color: black;}
+.colorTwo {background-color: crimson;}
+.colorThree {background-color: firebrick;}

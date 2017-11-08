@@ -17,6 +17,7 @@ To accomplish this, you will have to:
 * Write a function called  `createPalette` that creates a palette of at least two colors (e.g. red and blue) below the canvas using more `div` tags
 * Add an event listener to the palette `div` tags so when clicked the brush color is saved
 * Add an event listener to each canvas `div` so when clicked the background changes to the color selected in the palette
+* You'll likely want to edit ./css/style.css, and maybe index.html as well!
 
 * Deploy your app!
 * Paste link to deployed app here:
