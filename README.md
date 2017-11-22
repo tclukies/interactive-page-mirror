@@ -1,6 +1,6 @@
 ## Interactive Page
 
-Interactive Page is a set of drills about making interactive web pages.
+In these drills, you will use JavaScript to make interactive web pages.
 
 ## Standard
 
