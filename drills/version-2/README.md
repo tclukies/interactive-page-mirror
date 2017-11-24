@@ -1,6 +1,6 @@
 # Javascript Calculator
 
-Use Javascript to build a basic calculator using the provided HTML and CSS. You'll only need to edit index.js
+Use Javascript to build a basic calculator using the provided HTML and CSS. You'll only need to edit app.js
 
 ![Example](screenshots/example.gif)
 
