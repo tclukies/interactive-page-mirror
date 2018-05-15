@@ -24,6 +24,7 @@ clickedButtons.forEach(number => {
 function displayNumber(event) {
   var numberPress = event.target.textContent;
   var classOfNumberPress = event.target.className;
+
   if (numberPress === "C") {
     screen.textContent = "0";
     result = false;
@@ -40,9 +41,11 @@ function displayNumber(event) {
     screen.textContent = eval(screen.textContent);
     result = true;
   }
+
   if (screen.textContent === "Infinity") {
     screen.textContent = "ERROR";
   }
+
   if (result === true && classOfNumberPress === "numbers") {
     screen.textContent = numberPress;
     result = false;
